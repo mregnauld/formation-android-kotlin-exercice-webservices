@@ -1,0 +1,18 @@
+<resources>
+
+	<!-- Commun -->
+	<string name="app_name">Webservices</string>
+
+	<!-- Main -->
+	<string name="main_bouton_recuperer_planete">Récupérer planète</string>
+	<string name="main_planete_nom">Nom : %1$s\n</string>
+	<string name="main_planete_rotation">Période de rotation (h) : %1$s\n</string>
+	<string name="main_planete_periode">Période orbitale (j) : %1$s\n</string>
+	<string name="main_planete_diametre">Diam_tre (km) : %1$s\n</string>
+	<string name="main_planete_climat">Climat : %1$s\n</string>
+	<string name="main_planete_gravite">Gravité : %1$s\n</string>
+	<string name="main_planete_terrain">Terrain : %1$s\n</string>
+	<string name="main_planete_eau">Eau : %1$s\n</string>
+	<string name="main_planete_population">Population : %1$s\n</string>
+
+</resources>
