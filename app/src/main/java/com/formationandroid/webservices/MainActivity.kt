@@ -3,6 +3,8 @@ package com.formationandroid.webservices
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
+import com.formationandroid.webservices.ws.ReseauHelper
 import com.formationandroid.webservices.ws.RetourWSPlanetes
 import com.formationandroid.webservices.ws.RetrofitSingleton
 import com.formationandroid.webservices.ws.WSInterface
@@ -32,8 +34,16 @@ class MainActivity : AppCompatActivity()
 	 */
 	fun clicBoutonRecupererPlanete(view: View)
 	{
+		// vérification de l'état de la connexion internet :
+		if (!ReseauHelper.estConnecte(this))
+		{
+			Toast.makeText(this, R.string.main_erreur_connexion_internet, Toast.LENGTH_LONG).show()
+			return
+		}
+
 		// affichage du spinner d'attente :
 		progressbar_attente.visibility = View.VISIBLE
+		texte_planete.text = ""
 
 		// appel au webservice :
 		val call = serviceRetrofit.getPlanets()

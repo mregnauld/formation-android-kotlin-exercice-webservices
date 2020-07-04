@@ -5,6 +5,7 @@
 
 	<!-- Main -->
 	<string name="main_bouton_recuperer_planete">Récupérer planète</string>
+	<string name="main_erreur_connexion_internet">Aucune connexion internet</string>
 	<string name="main_planete_nom">Nom : %1$s\n</string>
 	<string name="main_planete_rotation">Période de rotation (h) : %1$s\n</string>
 	<string name="main_planete_periode">Période orbitale (j) : %1$s\n</string>
